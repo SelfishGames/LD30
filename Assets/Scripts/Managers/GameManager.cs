@@ -3,12 +3,13 @@ using System.Collections;
 
 public class GameManager : MonoBehaviour
 {
-    public CameraManager cameraManager;
-    public LevelManager levelManager;
-
     // General public objects
     public GameObject playerExplosion;
     public Transform player;
+
+    // Scripts
+    public CameraManager cameraManager;
+    public LevelManager levelManager;
     public PlayerManager playerManager;
 
     // Private
