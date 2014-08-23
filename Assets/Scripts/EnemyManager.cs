@@ -5,6 +5,7 @@ public class EnemyManager : MonoBehaviour
 {
     public Transform[] patrolPoints;
     public float speed;
+    public GameManager gameManager;
 
     private int currentArea = 0;
 
@@ -35,7 +36,9 @@ public class EnemyManager : MonoBehaviour
     {
         if (col.gameObject.name == "Player")
         {
-            col.gameObject.SetActive(false);   
+            
+            col.gameObject.SetActive(false);
+            gameManager.TriggerCollision();
         }
     }
 }
