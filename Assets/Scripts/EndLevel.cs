@@ -13,10 +13,19 @@ public class EndLevel : MonoBehaviour
 
     void OnTriggerEnter(Collider col)
     {
+        gameManager.playerManager.gameObject.SetActive(false);
+
+        StartCoroutine(ExplosionDelay (2f));
+        gameManager.TriggerCollision();
         gameManager.levelManager.currentLevel++;
     	gameManager.levelManager.ArrangeObstacles();
     	gameManager.cameraManager.transform.GetChild(0).gameObject.SetActive(true);
-    	
+        
     	col.transform.position = new Vector3(-25, 2.3f, 0);
+    }
+
+    IEnumerator ExplosionDelay(float delay)
+    {
+        yield return new WaitForSeconds(delay);
     }
 }
