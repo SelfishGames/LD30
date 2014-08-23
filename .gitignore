@@ -11,3 +11,10 @@
 /*.userprefs
 /*.pidb
 /*.booproj
+*.meta
+Assets/Scripts.meta
+Assets/Prefabs/Player.prefab.meta
+Assets/Prefabs/Player.prefab
+Assets/Prefabs.meta
+Assets/Prefabs.meta
+*.meta
