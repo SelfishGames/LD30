@@ -12,21 +12,13 @@ public class GameManager : MonoBehaviour
     public LevelManager levelManager;
     public PlayerManager playerManager;
 
-    // Private
+    void Start()
+    {
+
+    }
 
     void Update()
     {
-    	if(cameraManager.transform.GetChild(0).gameObject.activeSelf && Input.GetKeyDown("return"))
-    	{
-    		cameraManager.transform.GetChild(0).gameObject.SetActive(false);
-    	}
-    }
 
-    public void TriggerCollision()
-    {
-        // Set the location of the explosion.
-        playerExplosion.transform.localPosition = player.transform.localPosition;
-        // Play the explosion.
-        playerExplosion.SetActive(true);
     }
 }

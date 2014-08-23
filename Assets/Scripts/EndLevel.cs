@@ -2,8 +2,8 @@
 using System.Collections;
 
 public class EndLevel : MonoBehaviour
-{
-	public GameManager gameManager;
+{    
+    public GameManager gameManager;
     // Update is called once per frame
     void Update ()
     {
